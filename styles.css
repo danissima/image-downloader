@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+    padding: 0;
+}
+
+#content {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 5px;
+}
+
+.downloader {
+    width: 100%;
+    height: 180px;
+    border: 3px dashed #b8b8b8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.downloader.dragover {
+    border-color: black;
+}
+
+#downloader div {
+    width: 100%;
+    margin-right: 18px;
+    text-align: right;
+}
+
+span {
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#downloader p {
+    padding: 5px 0;
+}
+
+#downloader label {
+    width: 150px;
+    background-color: white;
+    padding: 10px 20px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer; 
+    font-weight: bold;
+    margin: 5px;
+    transition: border .2s ease-in-out;
+}
+
+#downloader input {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    display: none;
+    opacity: 0;
+}
+#downloader label:hover {
+    border-color: skyblue;
+}
+
+#progressBar {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px; 
+}
+
+#images {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 12%;
+    height: 55%;
+    margin: 3px;
+    border: 2px solid #b8b8b8;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item img {
+    height: 80%;
+    object-fit:contain;
+    z-index: -1;
+}
+
+.item p {
+    width: 100%;
+    height: 20%;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.taked {
+    background-color: white;
+    border-top: 2px solid #b8b8b8;
+}
+
+
+
+
+
+
+
+
+
+
+

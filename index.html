@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image downloader</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="content">
+        <div class="downloader" id="downloader">
+            <div><span>&times;</span></div>
+            <h2>Drop files anywhere to upload</h2>
+            <p>or</p>
+            <label for="file">Select files</label>
+            <input id="file" type="file" accept="image/jpeg, image/png" multiple>
+            <p>Maximum upload file size: 32 MB.</p>
+        </div>
+        <progress id="progressBar" value="0" max="100" style="width: 300px"></progress>
+        <div id="images">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+</body>
+</html>
